@@ -1,0 +1,10 @@
+plt.figure(figsize=(6,4))
+
+plt.bar(
+    ["Train RMSE","Test RMSE"],
+    [train_rmse,test_rmse]
+)
+
+plt.title("Overfitting Analysis")
+
+plt.show()
