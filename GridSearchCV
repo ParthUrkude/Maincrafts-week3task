@@ -1,0 +1,19 @@
+grid = GridSearchCV(
+
+    DecisionTreeRegressor(
+        random_state=42
+    ),
+
+    param_grid,
+
+    cv=5,
+
+    scoring="neg_root_mean_squared_error"
+)
+
+grid.fit(
+    X_train,
+    y_train
+)
+
+print("Grid Search Completed")
