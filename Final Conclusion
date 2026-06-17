@@ -1,0 +1,17 @@
+print("TASK 3 COMPLETED")
+
+print()
+
+print("Best Parameters:")
+
+print(grid.best_params_)
+
+print()
+
+print("Final RMSE:", rmse)
+
+print("Final R2 Score:", r2)
+
+print()
+
+print("Model Successfully Optimized Using GridSearchCV")
