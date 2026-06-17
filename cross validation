@@ -1,0 +1,15 @@
+cv_scores = cross_val_score(
+    tree,
+    X_scaled,
+    y,
+    cv=5,
+    scoring="neg_root_mean_squared_error"
+)
+
+cv_rmse = -cv_scores
+
+print("Cross Validation RMSE Scores")
+print(cv_rmse)
+
+print("\nAverage RMSE")
+print(cv_rmse.mean())
