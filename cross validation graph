@@ -1,0 +1,15 @@
+plt.figure(figsize=(7,4))
+
+plt.plot(
+    range(1,6),
+    cv_rmse,
+    marker="o"
+)
+
+plt.xlabel("Fold")
+
+plt.ylabel("RMSE")
+
+plt.title("Cross Validation Scores")
+
+plt.show()
