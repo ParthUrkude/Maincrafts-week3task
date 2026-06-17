@@ -1,0 +1,19 @@
+best_tree = grid.best_estimator_
+
+y_pred = best_tree.predict(X_test)
+
+rmse = np.sqrt(
+    mean_squared_error(
+        y_test,
+        y_pred
+    )
+)
+
+r2 = r2_score(
+    y_test,
+    y_pred
+)
+
+print("Optimized Model RMSE =", rmse)
+
+print("Optimized Model R2 =", r2)
