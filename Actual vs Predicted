@@ -1,0 +1,19 @@
+plt.figure(figsize=(10,5))
+
+plt.plot(
+    y_test.values[:50],
+    label="Actual"
+)
+
+plt.plot(
+    y_pred[:50],
+    label="Predicted"
+)
+
+plt.legend()
+
+plt.title(
+    "Actual vs Predicted Prices"
+)
+
+plt.show()
