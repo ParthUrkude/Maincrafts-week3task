@@ -1,0 +1,6 @@
+X = df.drop("HousePrice", axis=1)
+
+y = df["HousePrice"]
+
+print(X.shape)
+print(y.shape)
